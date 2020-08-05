@@ -1,0 +1,23 @@
+<h2>Product List</h2>
+
+<div class="productList">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Product</th>
+        <th scope="col">Unit</th>
+        <th scope="col">Price</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products; let i = index">
+        <th scope="row">{{ i }}</th>
+        <td>{{ product.name }}</td>
+        <td>{{ product.unit }}</td>
+        <td>{{ product.price }}</td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
